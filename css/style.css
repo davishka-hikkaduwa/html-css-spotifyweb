@@ -3,3 +3,111 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/********** SHARED **********/
+.container {}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/********** /SHARED **********/
+
+/********** CONTENT **********/
+
+
+
+footer .container {
+    height: 10vh;
+    background-color: black;
+}
+
+/********** /CONTENT **********/
+
+
+
+
+/********** DEBUG **********/
+
+
+#debug .row.container {
+    border: 1px solid grey;
+    background-color: green;
+    height: 2000px;
+    width: 100vw;
+
+}
+
+#debug .aside {
+    border: 1px solid grey;
+    background-color: aqua;
+    width: 100px;
+
+}
+
+#debug .column.container {
+    border: 1px solid grey;
+    background-color: brown;
+
+    width: calc(100vw - 100px)
+}
+
+#debug #fixed-nav {
+    border: 1px solid grey;
+    background-color: darkcyan;
+    height: 10vh;
+    width: calc(100vw - 100px);
+    position: fixed;
+    z-index: 100;
+}
+
+/* #debug .row.container .container {
+    border: 1px solid grey;
+    background-color: royalblue;
+} */
+
+/* .big-box {
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+}
+
+.small-box {
+    height: 200px;
+
+    background-color: brown;
+    border: 1px solid green;
+
+}
+
+.small-box.aside {
+    width: 10vw;
+
+}
+
+.small-box.column {
+    width: 200px
+} */
+
+
+
+
+/********** /DEBUG **********/
