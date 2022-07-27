@@ -67,10 +67,7 @@ body {
 
 
 
-.content.container {
-    /* min-height: fit-content; */
-    background-color: var(--content-bg-color);
-}
+
 
 
 .player-bar {
@@ -135,6 +132,45 @@ body {
 }
 
 /***** /fixed-nav *****/
+
+/***** content-container *****/
+.content.container {
+    /* min-height: fit-content; */
+    background-color: var(--content-bg-color);
+    margin-top: 10vh;
+    margin-left: 50px;
+
+}
+
+.content.container #menu {
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.content.container ul {
+    width: 100%;
+    color: white;
+    list-style-type: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    line-height: 30px;
+}
+
+.content.container li {
+    padding: 0 30px;
+    color: #73757b;
+    font-size: 12px;
+}
+
+.content.container h1 {
+    color: white;
+    padding-left: 20px;
+}
+
+.content.container .tracks.container {}
+
+/***** /content-container *****/
 
 
 
