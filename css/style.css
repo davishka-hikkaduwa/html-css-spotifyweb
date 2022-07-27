@@ -1,3 +1,18 @@
+/********** VARIABLES **********/
+:root {
+    --fixed-nav-bg-color: #070b10;
+    --aside-bg-color: #000000;
+    --footer-bg-color: #282828;
+    --content-bg-color: #141922;
+
+
+}
+
+
+/********** /VARIABLES **********/
+
+/********** GENERICS **********/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +24,10 @@ body {
     width: 100vw;
 }
 
+/********** /GENERICS **********/
 
 /********** SHARED **********/
-.container {}
+
 
 .flex {
     display: flex;
@@ -32,17 +48,69 @@ body {
 /********** /SHARED **********/
 
 /********** CONTENT **********/
+.row.container {
+    width: 100vw;
+    position: relative;
+    overflow-y: auto;
+    flex: 1;
+}
 
+
+
+.aside {
+    width: 50px;
+    z-index: 2;
+    background-color: var(--aside-bg-color);
+    color: white;
+
+}
+
+.column.container {
+    /* width: calc(100vw - 50px); */
+    width: 100%;
+
+}
+
+#fixed-nav {
+    height: 10vh;
+    width: calc(100vw);
+    position: fixed;
+    z-index: 1;
+    background-color: var(--fixed-nav-bg-color);
+}
+
+.column.container .container {
+    /* min-height: fit-content; */
+    background-color: var(--content-bg-color);
+}
 
 
 .player-bar {
     height: 10vh;
     width: 100%;
-    background-color: black;
+    background-color: var(--footer-bg-color);
     position: fixed;
     bottom: 0;
     z-index: 100;
 }
+
+/***** aside *****/
+
+.icon {
+    color: #d2d2d2;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.icon .fa-brands.fa-spotify {
+    font-size: 30px;
+    color: white;
+}
+
+/***** /aside *****/
+
+
 
 /********** /CONTENT **********/
 
@@ -52,41 +120,39 @@ body {
 /********** DEBUG **********/
 
 
-#debug .row.container {
+/* #debug .row.container {
     border: 1px solid grey;
     background-color: green;
-    height: 2000px;
-    width: 100vw;
+
+
 
 }
 
 #debug .aside {
     border: 1px solid grey;
     background-color: aqua;
-    width: 100px;
-
 }
+
+
 
 #debug .column.container {
     border: 1px solid grey;
     background-color: brown;
 
-    width: calc(100vw - 100px)
 }
 
 #debug #fixed-nav {
     border: 1px solid grey;
     background-color: darkcyan;
-    height: 10vh;
-    width: calc(100vw - 100px);
-    position: fixed;
-    z-index: 100;
-}
 
-/* #debug .row.container .container {
-    border: 1px solid grey;
-    background-color: royalblue;
 } */
+
+#debug .row.container .container {
+    /* border: 1px solid grey;
+    background-color: royalblue; */
+    height: 2000px;
+
+}
 
 
 
