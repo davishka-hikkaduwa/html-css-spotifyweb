@@ -35,9 +35,13 @@ body {
 
 
 
-footer .container {
+.player-bar {
     height: 10vh;
+    width: 100%;
     background-color: black;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
 }
 
 /********** /CONTENT **********/
@@ -82,29 +86,6 @@ footer .container {
 /* #debug .row.container .container {
     border: 1px solid grey;
     background-color: royalblue;
-} */
-
-/* .big-box {
-    height: 500px;
-    width: 500px;
-    background-color: aqua;
-}
-
-.small-box {
-    height: 200px;
-
-    background-color: brown;
-    border: 1px solid green;
-
-}
-
-.small-box.aside {
-    width: 10vw;
-
-}
-
-.small-box.column {
-    width: 200px
 } */
 
 
