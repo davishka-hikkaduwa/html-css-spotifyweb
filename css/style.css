@@ -203,7 +203,22 @@ aside {
 /***** tracks-container *****/
 
 #tracks-container {
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.album {
+    height: fit-content;
+    flex-basis: calc(50% - 30px);
+    margin: 10px;
+}
+
+.album-img {
+    max-height: fit-content;
+}
+
+.album-labels {
+    height: fit-content;
+    text-align: center;
 }
 
 .album h3 {
@@ -243,29 +258,23 @@ aside {
 }
 
 .debug .album {
-    height: 250px;
-    width: 200px;
     border: 1px solid red;
     /* padding: 10px; */
-    margin-bottom: 10px;
 }
 
 .debug .album-img {
-    height: 200px;
     /* width: 200px; */
     border: 1px black dotted;
 }
 
 .debug .album-labels {
-    height: 50px;
-    text-align: center;
     border: 1px solid pink;
 }
 
 /********** /DEBUG **********/
 
-
-@media screen and (min-width: 552px) {
+/* S viewport */
+@media screen and (min-width: 640px) {
     aside {
         width: 200px;
         padding: 20px;
@@ -300,3 +309,24 @@ aside {
         display: flex;
     }
 }
+
+/* /S viewport */
+
+
+/* MD viewport */
+@media screen and (min-width: 878px) {
+    #tracks-container {
+        justify-content: flex-start;
+    }
+
+    .album {
+        flex-basis: calc(25% - 30px);
+    }
+}
+
+/* /MD viewport */
+
+/* MD viewport */
+@media screen and (min-width: 1440px) {}
+
+/* /MD viewport */
