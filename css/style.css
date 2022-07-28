@@ -96,10 +96,32 @@ aside {
     padding-top: 20px;
 }
 
+#playlist.hidden {
+    display: none;
+}
+
+.fa-solid.fa-square-plus {
+    font-size: 36px;
+}
+
 #playlist h3 {
     color: var(--album-name-color);
 }
 
+#playlist ul {
+    list-style-type: none;
+    line-height: 2;
+}
+
+#playlist .icon {
+    align-items: center;
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+}
+
+#playlist span {
+    padding-left: var(--padding);
+}
 
 
 
@@ -264,6 +286,10 @@ aside {
     }
 
     .images .hidden {
+        display: flex;
+    }
+
+    #playlist.hidden {
         display: flex;
     }
 }
