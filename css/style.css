@@ -72,7 +72,7 @@ aside {
     height: 100vh;
     position: fixed;
     width: 50px;
-    z-index: 2;
+    z-index: 90;
     background-color: var(--aside-bg-color);
     padding: var(--padding);
     color: var(--sub-heading-color);
@@ -144,6 +144,7 @@ aside {
     opacity: 80%;
     justify-content: flex-end;
     align-items: center;
+    z-index: 80;
 }
 
 
@@ -165,9 +166,8 @@ aside {
 /***** content-container *****/
 #content-container {
     background-color: var(--content-bg-color);
-    padding-top: 10vh;
     margin-left: 50px;
-    /* margin-bottom: 50px; */
+    padding: 10vh 20px 20px 20px;
     overflow-y: auto;
     height: calc(100vh - 60px);
 }
@@ -291,23 +291,6 @@ aside {
 
 
 /********** DEBUG **********/
-
-
-
-.debug .album {
-    border: 1px solid red;
-    /* padding: 10px; */
-}
-
-.debug .album-img {
-    /* width: 200px; */
-    border: 1px black dotted;
-}
-
-.debug .album-labels {
-    border: 1px solid pink;
-}
-
 /********** /DEBUG **********/
 
 /* S viewport */
