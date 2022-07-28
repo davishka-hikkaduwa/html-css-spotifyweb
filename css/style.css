@@ -75,12 +75,31 @@ aside {
     z-index: 2;
     background-color: var(--aside-bg-color);
     padding: var(--padding);
+    color: var(--sub-heading-color);
 }
 
 .images {
     text-align: center;
     margin: 10px 0;
 }
+
+#home.images h5 {
+    color: var(--album-name-color);
+}
+
+
+.images .hidden {
+    display: none;
+}
+
+#playlist {
+    padding-top: 20px;
+}
+
+#playlist h3 {
+    color: var(--album-name-color);
+}
+
 
 
 
@@ -215,3 +234,36 @@ aside {
 }
 
 /********** /DEBUG **********/
+
+
+@media screen and (min-width: 552px) {
+    aside {
+        width: 200px;
+        padding: 20px;
+    }
+
+    #content-container {
+        margin-left: 200px;
+    }
+
+    .xs-show {
+        display: none;
+    }
+
+    .xs-hidden {
+        display: initial;
+    }
+
+    .images.logo {
+        width: 70%;
+    }
+
+    .images {
+        display: flex;
+        width: 15%;
+    }
+
+    .images .hidden {
+        display: flex;
+    }
+}
