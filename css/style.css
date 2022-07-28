@@ -79,7 +79,7 @@ aside {
 }
 
 .images {
-    text-align: center;
+    align-items: center;
     margin: 10px 0;
 }
 
@@ -87,6 +87,13 @@ aside {
     color: var(--album-name-color);
 }
 
+.images.flex {
+    flex-wrap: nowrap;
+}
+
+.images h5 {
+    padding-left: 5px;
+}
 
 .images .hidden {
     display: none;
