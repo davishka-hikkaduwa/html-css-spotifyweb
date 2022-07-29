@@ -50,7 +50,7 @@
     flex-wrap: wrap;
 }
 
-img {
+#app-container img {
     width: 100%;
 }
 
@@ -233,12 +233,12 @@ aside {
 
 .hidden-play-icon {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     opacity: 0;
     font-size: 60px;
     color: #fff;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
     text-align: center;
 }
 
@@ -281,16 +281,57 @@ aside {
     position: fixed;
     bottom: 0;
     z-index: 100;
+    padding-bottom: 10px;
+
 }
+
+.player-bar .flex {}
 
 /***** /footer *****/
 
 /********** /CONTENT **********/
 
-
-
-
 /********** DEBUG **********/
+.debug .player-bar .flex {
+    border: 1px solid red;
+    height: 60px;
+    width: calc(100% / 3);
+}
+
+/* LEFT-COL */
+.debug #left-col {
+    padding: 10px 5px;
+}
+
+.debug #left-col #current-song-img {
+    height: 30px;
+    padding-right: 10px;
+}
+
+.debug #left-col img {
+    width: 30px;
+}
+
+.debug #left-col h3 {
+    color: var(--album-name-color);
+}
+
+.debug #left-col h5 {
+    color: var(--sub-heading-color);
+}
+
+.debug #left-col .column {
+    padding-left: 20px;
+}
+
+.debug #left-col .fa-regular {
+    color: white;
+    color: var(--sub-heading-color);
+}
+
+/* MID-COL */
+
+
 /********** /DEBUG **********/
 
 /* S viewport */
