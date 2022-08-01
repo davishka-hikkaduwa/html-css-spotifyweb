@@ -220,10 +220,12 @@ aside {
 .album {
     position: relative;
     height: fit-content;
-    flex-basis: calc(50% - 30px);
+    flex-basis: calc((100% / 2) - 30px);
     margin: 10px;
 
 }
+
+
 
 .album-img {
     max-height: fit-content;
@@ -293,7 +295,7 @@ aside {
 
 /* left-col */
 #left-col {
-    width: 20%;
+    width: 30%;
     padding: 10px 5px;
 
 }
@@ -333,7 +335,7 @@ aside {
 
 /* mid-col */
 #mid-col {
-    width: 60%;
+    width: 40%;
 }
 
 #mid-col .row {
@@ -359,10 +361,12 @@ aside {
 }
 
 #mid-col .row.bottom {
-    padding: 0 50px;
+    width: 60%;
+    /* padding: 0 50px; */
+    justify-content: center;
 }
 
-.slider-container {
+.progress-bar {
     width: 100%;
     padding: 0 5px;
 }
@@ -386,7 +390,7 @@ aside {
 
 /* right-col */
 #right-col {
-    width: 20%;
+    width: 30%;
 }
 
 #right-col .flex {
